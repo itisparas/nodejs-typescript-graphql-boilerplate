@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-typescript-graphql-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && nodemon -w src --ext ts --exec ts-node src/index.ts"
+  },
+  "author": "Paras Singla <itisparas@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.21.2",
+    "class-validator": "^0.13.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "flatted": "^3.1.1",
+    "graphql": "^15.5.0",
+    "helmet": "^4.4.1",
+    "inversify": "^5.0.5",
+    "pg": "^8.5.1",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.22",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.0",
+    "typescript": "^3.7.4"
+  }
+}
